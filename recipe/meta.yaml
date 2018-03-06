@@ -1,4 +1,4 @@
-{% set version = '2016.8-2' %}
+{% set version = '2017.10-1' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/SQUAREM_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/SQUAREM/SQUAREM_{{ version }}.tar.gz
-  sha256: 13d0bd9161620c3c3f794116d224b83b66ccb1479a7dc076c918ec2235dadcc7
+  sha256: 9b89905b436f1cf3faa9e3dabc585a76299e729e85ca659bfddb4b7cba11b283
 
 build:
   number: 0
