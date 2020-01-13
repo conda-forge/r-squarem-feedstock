@@ -1,4 +1,4 @@
-{% set version = '2017.10-1' %}
+{% set version = "2020.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SQUAREM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SQUAREM/SQUAREM_{{ version }}.tar.gz
-  sha256: 9b89905b436f1cf3faa9e3dabc585a76299e729e85ca659bfddb4b7cba11b283
+  sha256: 7a6103584e693813821f5da5c132abb347bec00fff3bd8dce182c78676e88a6c
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1002
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -49,9 +49,3 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - rvalieris
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
