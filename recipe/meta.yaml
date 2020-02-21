@@ -1,4 +1,4 @@
-{% set version = "2020.1" %}
+{% set version = "2020.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SQUAREM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SQUAREM/SQUAREM_{{ version }}.tar.gz
-  sha256: 7a6103584e693813821f5da5c132abb347bec00fff3bd8dce182c78676e88a6c
+  sha256: 6e3373bb5190ade222d676dae9f1aad32feddd50e97499fab7d66fd94752dac8
 
 build:
   noarch: generic
